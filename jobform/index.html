@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Form System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span class="sitemap">SiteMap</span>
+        <div class="font-size">
+            <span>A+</span>
+            <span>A</span>
+            <span>A-</span>
+        </div>
+    </div>
+<header class="ojas-header">
+    <div class="left">
+        <img src="tag.png" alt="Gov Logo" class="gov-logo">
+
+        <div class="divider"></div>
+
+        <div class="text">
+            <h1>ONLINE JOB APPLICATION SYSTEM</h1>
+            <p>Government of Gujarat</p>
+        </div>
+    </div>
+    <div class="right">
+        <img src="image.png" alt="OJAS Logo" class="ojas-logo">
+    </div>
+</header>
+
+<nav class="ojas-menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li> <a href="#">Registration <span class="arrow">▼</span></a></li>
+        <li><a href="#">Online Application <span class="arrow">▼</span></a></li>
+        <li><a href="#">Upload <span class="arrow">▼</span></a></li>
+        <li><a href="#">Fees <span class="arrow">▼</span></a></li>
+        <li><a href="#">Call Letter / Preference <span class="arrow">▼</span></a></li>
+        <li><a href="#">Other Application <span class="arrow">▼</span></a></li>
+    </ul>
+</nav>
+
+<div class="page-bar">
+    Registration
+</div>
+<div class="note-box">
+    <div class="note-title">Note:</div>
+    <div class="note-text">
+        <p>Special Characters not allowed &lt;%&gt;&lt;&gt;()&amp;+;:&quot;.-, * etc.</p>
+        <p><span class="star">*</span> indicates mandatory field.</p>
+    </div>
+</div>
+<div class="form-section">
+    <div class="section-header">
+        Personal Details
+    </div>
+
+    <div class="section-body">
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Title</label>
+                <select>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Surname <span class="req">*</span></label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>First Name <span class="req">*</span></label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Father/Husband Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group large">
+                <label>Mother's Name <span class="req">*</span></label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Gender <span class="req">*</span></label>
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <div class="form-group">
+                <label>ReSelect Gender <span class="req">*</span></label>
+                <label><input type="radio" name="rgender"> Male</label>
+                <label><input type="radio" name="rgender"> Female</label>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth <span class="req">*</span></label>
+                <input type="text" placeholder="dd/mm/yyyy">
+            </div>
+
+            <div class="form-group">
+                <label>Marital Status <span class="req">*</span></label>
+                <label><input type="radio" name="marital"> Married</label>
+                <label><input type="radio" name="marital"> Unmarried</label>
+                <label><input type="radio" name="marital"> Separated</label>
+            </div>
+
+            <div class="form-group">
+                <label>Category <span class="req">*</span></label>
+                <select>
+                    <option>Select</option>
+                    <option>General</option>
+                    <option>OBC</option>
+                    <option>SC</option>
+                    <option>ST</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-section">
+  <div class="section-header">
+    Communication Details 
+  </div>
+
+  <div class="section-body comm-grid">
+
+
+    <div class="comm-col">
+      <div class="form-group full">
+        <label>Present Address <span class="req">*</span></label>
+        <textarea></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>State <span class="req">*</span></label>
+        <select>
+          <option>GUJARAT</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>District <span class="req">*</span></label>
+        <select>
+          <option>Select</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Taluka <span class="req">*</span></label>
+        <select>
+          <option>Select</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>PIN Code <span class="req">*</span></label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Mobile No <span class="req">*</span></label>
+        <input type="text">
+        <div class="note-red">
+          Send SMS Alert<br>
+          (OTP Will be Sent to Verify Mobile No)
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Re-Type Mobile No <span class="req">*</span></label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Nationality <span class="req">*</span></label>
+        <input type="text" value="Indian" readonly>
+      </div>
+    </div>
+
+
+    <div class="comm-col">
+      <div class="form-group full">
+        <label>Permanent Address <span class="req">*</span></label>
+        <textarea></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>State <span class="req">*</span></label>
+        <select>
+          <option>GUJARAT</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>District <span class="req">*</span></label>
+        <select>
+          <option>Select</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Taluka <span class="req">*</span></label>
+        <select>
+          <option>Select</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Pin Code <span class="req">*</span></label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Email <span class="req">*</span></label>
+        <input type="email">
+        <div class="note-red">
+          Registration Details Will be Sent to EMAIL
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Re-Type Email <span class="req">*</span></label>
+        <input type="email">
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="form-section">
+  <div class="section-header">Other Details</div>
+
+  <div class="section-body">
+
+
+    <div class="row">
+      <div class="col">
+        <label>શું તમે રમતગમતના પરિભાષા મુજબ પાત્રતા ધરાવો છો?</label><br>
+        <input type="radio" name="sports"> Yes
+        <input type="radio" name="sports" checked> No
+      </div>
+
+      <div class="col">
+        <label>Name of Sports</label>
+        <select><option>Select</option></select>
+      </div>
+
+      <div class="col">
+        <label>Sport Level</label>
+        <select><option>Select</option></select>
+      </div>
+
+      <div class="col">
+        <label>રમતમા ભાગ લીધેલ વર્ષ</label>
+        <input type="text">
+      </div>
+
+      <div class="col">
+        <label>રમતનું પ્રમાણપત્ર આપનાર કચેરી/સત્તાધિકારી</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <hr>
+
+<div class="physically-row">
+  <div class="physically-label">
+    Physically Challenged<br>
+    <span>(As Per Published Advertisement Percentage)</span>
+  </div>
+
+  <div class="physically-options">
+    <label><input type="checkbox"> Blindness</label>
+    <label><input type="checkbox"> Low Vision</label>
+    <label><input type="checkbox"> Deaf & Dumb</label>
+    <label><input type="checkbox"> Hearing Handicap</label>
+    <label><input type="checkbox"> Orthopedics (OA, OL, BL, OAL)</label>
+    <label><input type="checkbox"> Not Applicable</label>
+    <label><input type="checkbox"> Other</label>
+  </div>
+</div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col">
+        <label>Widow (વિધવા)</label><br>
+        <input type="radio" name="widow"> Yes
+        <input type="radio" name="widow" checked> No
+      </div>
+
+      <div class="col">
+        <label>Widow Certificate No.</label>
+        <input type="text">
+      </div>
+
+      <div class="col">
+        <label>Widow Certificate Date</label>
+        <input type="text" placeholder="dd/mm/yyyy">
+      </div>
+
+      <div class="col">
+        <label>પ્રમાણપત્ર આપનાર સત્તાધિકારી</label>
+        <select><option>Select</option></select>
+      </div>
+    </div>
+
+    <hr>
+
+
+    <div class="row">
+      <div class="col">
+        <label>Ex-Soldier (Army, Navy, Air Force)</label><br>
+        <input type="radio" name="ex"> Yes
+        <input type="radio" name="ex" checked> No
+      </div>
+
+      <div class="col">
+        <label>From Date</label>
+        <input type="text" placeholder="dd/mm/yyyy">
+      </div>
+
+      <div class="col">
+        <label>To Date</label>
+        <input type="text" placeholder="dd/mm/yyyy">
+      </div>
+
+      <div class="col">
+        <label>ExServicemen Identity Card No.</label>
+        <input type="text">
+      </div>
+
+      <div class="col">
+        <label>માજી સૈનિક ઓળખ કાર્ડ આપનાર સત્તાધિકારી</label>
+        <select><option>Select</option></select>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col">
+        <label>Currently working as Gujarat State Government Employee?</label><br>
+        <input type="radio" name="gov"> Yes
+        <input type="radio" name="gov" checked> No
+      </div>
+
+      <div class="col">
+        <label>Joining Date in Government Service</label>
+        <input type="text" placeholder="dd/mm/yyyy">
+      </div>
+
+      <div class="col">
+        <label>Name of Department (વિભાગનું નામ)</label>
+        <input type="text">
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="lang-photo-wrapper">
+
+<div class="language-section">
+  <div class="blue-header">
+    Language Details (ભાષાની માહિતી)
+  </div>
+
+  <table class="lang-table">
+    <tr>
+      <th>Language Proficiency</th>
+      <th>Language</th>
+      <th>Read</th>
+      <th>Write</th>
+      <th>Speak</th>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td class="lang-name">English</td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td class="lang-name">Hindi</td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td class="lang-name">Gujarati</td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+      <td><input type="checkbox"></td>
+    </tr>
+  </table>
+</div>
+  <div class="photo-note">
+    <div class="pink-header">
+      Photo અને Signature Upload કરવા માટેની અગત્યની સૂચનાઓ :-
+    </div>
+    <ol>
+  <li>Upload the photograph in JPG format only.</li>
+    <li>The photograph size should be 5 cm (height) × 3.6 cm (width).</li>
+    <li>The file size of the photograph and signature should not exceed 15 KB.</li>
+    <li>If the file size is less than required, adjust the scanner DPI resolution properly.</li>
+    <li>The signature should be done on white paper using a dark pen and uploaded in JPG format.</li>
+    <li>The signature size should be 2.5 cm × 7.5 cm.</li>
+    </ol>
+  </div>
+
+</div>
+<div class="upload-box">
+  <div class="blue-header">
+    Upload Photograph
+  </div>
+
+  <div class="upload-content">
+    <p class="note">
+      <strong>Note :</strong> Quality of Photograph should be good enough to be identifiable and acceptable.
+    </p>
+
+    <div class="file-row">
+      <input type="file">
+    </div>
+
+    <button class="upload-btn">Upload</button>
+
+    <p class="photo-info">
+      Photo size: 5 cm × 3.6 cm (width × height).<br>
+      Photo file size should not exceed 15 KB.
+    </p>
+  </div>
+</div>
+<div class="upload-box">
+  <div class="blue-header">
+    Upload Signature
+  </div>
+
+  <div class="upload-content">
+    <p class="note">
+      <strong>Note :</strong> Please sign on white paper with dark pen and scan it in JPG format.
+    </p>
+
+    <div class="file-row">
+      <input type="file">
+    </div>
+
+    <button class="upload-btn">Upload</button>
+
+    <p class="photo-info">
+      Signature size: 2.5 cm × 7.5 cm (height × width).<br>
+      Signature file size should not exceed 15 KB.
+    </p>
+  </div>
+</div>
+<div class="declaration-box">
+  <div class="blue-header">
+    Declaration
+  </div>
+
+  <div class="declaration-content">
+    <p class="decl-text">
+      I hereby declare that the information furnished by me in this application is true, complete and correct to the best of my knowledge and belief.
+    </p>
+
+    <p class="decl-text">
+      I understand that <strong>ONE TIME REGISTRATION</strong> is mandatory for applying for any post through the OJAS Online Portal.
+    </p>
+
+    <p class="decl-text">
+      ONE TIME REGISTRATION allows candidates to submit their personal details once on the OJAS Online Portal, which can be used for applying to various posts.
+    </p>
+
+    <p class="decl-text">
+      I further understand that after completing registration, I must use my OTR number and OTP for applying to any post through OJAS.
+    </p>
+
+    <div class="decl-radio">
+      <label><input type="radio" name="declaration"> Yes</label>
+      <label><input type="radio" name="declaration"> No</label>
+    </div>
+  </div>
+</div>
+<div class="captcha-box">
+  <div class="blue-header">
+    Captcha
+  </div>
+
+  <div class="captcha-content">
+    <div class="captcha-code">3PR78</div>
+    <input type="text" class="captcha-input">
+  </div>
+</div>
+
+<div class="save-btn-wrap">
+  <button class="save-btn">Save</button>
+</div>
+
+</body>
+</html>
